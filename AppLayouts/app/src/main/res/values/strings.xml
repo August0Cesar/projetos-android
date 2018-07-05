@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AppLayouts</string>
+    <string name="titulo_tela_linear">Bem Vindo Augusto</string>
+    <string name="abir_tela">Abrir nova Tela</string>
+    <string name="imprimeMensagem">Imprime Mensagem</string>
+    <string name="bem_vindo">Bem a Tela 2</string>
 </resources>
