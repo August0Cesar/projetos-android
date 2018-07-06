@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void abreNovaTela(View view) {
         Intent intent = new Intent(getApplicationContext(),Tela2Activity.class);
+        Bundle parans = new Bundle();
+        parans.putString("nome","Augusto Cesar");
+        intent.putExtras(parans);//enviando parametros para outra tela
         startActivity(intent);
     }
 }
