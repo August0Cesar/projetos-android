@@ -26,7 +26,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:id="@+id/btn_segundoButton"
-        android:text="@string/abir_tela"
+        android:text="@string/abir_tela_formulario"
         android:onClick="abreNovaTela"
         />
     <Button

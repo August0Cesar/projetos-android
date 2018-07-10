@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Tela2Activity extends AppCompatActivity {
     Handler handler = new Handler();
@@ -18,15 +19,6 @@ public class Tela2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela2);
-        textView = (TextView) findViewById(R.id.valorView);
-        textoTitulo = (TextView) findViewById(R.id.tituloTela2);
-        btn_processamento = (Button) findViewById(R.id.btn_processamento);
-
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
-        if(bundle != null){
-            textoTitulo.setText(bundle.get("nome").toString());
-        }
     }
 
     public void iniciaProcessamento(View view) {
@@ -35,5 +27,15 @@ public class Tela2Activity extends AppCompatActivity {
         textView.setTextSize(tamanhoTexto);
         btn_processamento.setActivated(false);
         btn_processamento.setVisibility(View.INVISIBLE);
+    }
+
+    public void enviaTela1(View view) {
+        String teste = "apertou botao 1";
+        Toast.makeText(getApplicationContext(),teste,Toast.LENGTH_SHORT).show();
+    }
+
+    public void enviaTela2(View view) {
+        String teste = "apertou botao 2";
+        Toast.makeText(getApplicationContext(),teste,Toast.LENGTH_SHORT).show();
     }
 }
