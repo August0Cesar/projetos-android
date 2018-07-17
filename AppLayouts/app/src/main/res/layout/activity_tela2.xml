@@ -76,7 +76,7 @@
         android:layout_marginLeft="12dp"
         android:layout_marginTop="182dp"
         android:text="@string/envia_tela_1"
-        android:onClick="enviaTela1"/>
+        android:onClick="enviaDadosTela3"/>
 
     <Button
         android:id="@+id/btn_enviaTela2"

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela3">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto_nome"
+        android:text="@string/nome_padrao"
+        android:textSize="8pt"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto_email"
+        android:text="@string/mail_padrao"
+        android:layout_below="@+id/texto_nome"
+        android:layout_marginTop="5dp"
+        android:textSize="8pt"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texto_email"
+        android:layout_marginTop="87dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:id="@+id/btn_aceitar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/aceitar"
+            android:textSize="15sp"
+            android:onClick="aceitou"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_recusar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/recusou"
+            android:textSize="15sp"
+            android:onClick="recusou"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

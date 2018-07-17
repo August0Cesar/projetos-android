@@ -7,7 +7,11 @@
     <string name="label_nome">Nome:</string>
     <string name="label_email">Email:</string>
     <string name="for_cadastro">Formulario de Cadastro</string>
-    <string name="envia_tela_1">Envia Tela 1</string>
+    <string name="envia_tela_1">Envia Dados</string>
     <string name="envia_tela_2">Envia Tela 2</string>
     <string name="abir_tela_formulario">Abrir Tela de Formulario</string>
+    <string name="nome_padrao">Nome padrão</string>
+    <string name="mail_padrao">padrao@gmail.com</string>
+    <string name="aceitar">Aceitar</string>
+    <string name="recusou">Recusou</string>
 </resources>
